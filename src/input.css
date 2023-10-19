@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --GrayishBlue: hsl(233, 8%, 62%);
+}
+@font-face {
+  font-family: "publicSansFont";
+  src: url("../font/PublicSans-VariableFont_wght.ttf");
+}
+body {
+  overflow-x: hidden;
+  font-family: publicSansFont;
+}
+p {
+  color: var(--GrayishBlue);
+}
+
+.container {
+  padding: 0 10px;
+}
+
+section:last-of-type p,
+section:nth-last-of-type(2) p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+#cta {
+  background-image: url("../images/bg-intro-desktop.svg"),
+    linear-gradient(to bottom, var(--VeryLightGray), White);
+  background-repeat: no-repeat;
+  background-position:
+    50vw center,
+    0;
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  #cta {
+    height: auto;
+    background-position:
+      0 100%,
+      0;
+  }
+}
