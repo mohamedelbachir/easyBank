@@ -332,7 +332,7 @@ function App() {
               <p>
                 &copy;Easybank, by{" "}
                 <a
-                  href="htpps://www.github.com/mohamedelbachir"
+                  href="https://www.github.com/mohamedelbachir"
                   className="text-LimeGreen"
                 >
                   Mohamed
